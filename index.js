@@ -2,13 +2,13 @@
 
 
 
-const adding = () =>{
-    let input = document.querySelector('#inputs').value,
-     les = document.querySelector('.list-item'),
-     linod = document.createElement('li'),
-     val = document.createTextNode(input);
+function adding(){
+    var txtVal = document.getElementById('txtVal').value,
+     listNode = document.getElementById('list'),
+     liNode = document.createElement("LI"),
+     txtNode = document.createTextNode(txtVal);
 
-     linod.appendChild(val);
-     les.appendChild(linod)
+     liNode.appendChild(txtNode);
+     listNode.appendChild(liNode);
 
 }
